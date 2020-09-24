@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content%}
+<div class="container">
+    <h4>Linear Regression</h4>
+    
+        <form method="post">
+            <div class="form-group">
+                <label class="col-sm-2">Input X:</label>
+                <input name="input1" value="{{input1}}" class="col-sm-3" style="margin-right: 30px;"/>
+                <label class="col-sm-2">Input Y:</label>
+                <input name="input2" value="{{input2}}" class="col-sm-3" />
+            </div> 
+            <div class="form-group">
+                <label class="col-sm-2">Predict X:</label>
+                <input name="output1" value="{{output1}}" class="col-sm-3" style="margin-right: 30px;"/>
+                <label class="col-sm-2">Predict Y:</label>
+                <input name="output2" value="{{resultString}}" class="col-sm-3" />
+            </div> 
+            <div class="form-group">
+                <button  type="submit" name="btnSubmit" value="submit" class="btn btn-primary">Submit</button>                       
+            </div>      
+       
+        </form>
+         
+</div>
+{% endblock content %}

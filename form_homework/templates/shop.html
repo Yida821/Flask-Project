@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content%}
+    <div class="container">
+    <div class="row row-cols-3 row-cols-md-4" id="bracelets">
+       
+        {% for key, value in dic_items %}
+        
+            <div class="col mb-4 border-0"> 
+                <div class="col mb-3 card">
+                    <a href= {{value.get("image")}}>
+                        <img src= {{value.get("image")}} height = 300 weight = 300 class="card-img-top" alt="..." >
+                    </a>
+                    <div class="card-body">
+                        <h4 class="card-title">{{value.get("name")}}</h4>
+                        <h5 class="card-title">price{{value.get("price")}}</h5>
+                        <p class="card-text">{{value.get("description")}}</p>
+
+                    </div>
+                </div>
+            </div>
+      
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}

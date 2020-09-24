@@ -1,0 +1,367 @@
+{% extends "layout.html" %}
+{% block content%}
+<div class="row">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-8">
+        <ul class="nav nav-tabs md-tabs " id="myTabEx" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active show" id="home-tab-ex" data-toggle="tab" href="#forum-ex" role="tab"
+                   aria-controls="forum-ex"
+                   aria-selected="true">HTML Post</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="profile-tab-ex" data-toggle="tab" href="#profile-ex" role="tab"
+                   aria-controls="profile-ex"
+                   aria-selected="false">CSS POST</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact-tab-ex" data-toggle="tab" href="#contact-ex" role="tab"
+                   aria-controls="contact-ex"
+                   aria-selected="false">PYTHON & BOOSTRAP</a>
+            </li>
+        </ul>
+        <div class="tab-content pt-5" id="myTabContentEx">
+            <div class="tab-pane fade active show" id="forum-ex" role="tabpanel" aria-labelledby="home-tab-ex">
+                <h4><a href="https://rubygarage.org/blog/single-page-app-vs-multi-page-app">Homework1 Single-Page App or Multiple-Page App</a></h4>
+                <small>by clicking title above, you will be redirected to the corresponding website of this article</small>
+                <br/>
+                <br/>
+                <h5>Conclusion</h5>
+                <p>There are two types of web application architects: single-page and multiple-page web app. Compare to the MPA,
+                    SPA is relatively a modern product. SPA possesses characters, such as speed, responsiveness, linear user experiences,
+                    and caching capability. Therefore, businesses intend to build up a dynamic platform with a small portion of data
+                    volume are supporting SPA development. However, MPA is standing still by its satisfying performance on SEO, history tracing,
+                    despite its disadvantages from slow performance, time-consuming development,  costly maintenance aspects.
+                    The ides of SPA offsets the ability of good performances in SEO for fast loading and updating.</p>
+
+                <hr/>
+
+                <h4><a href="https://www.w3schools.com/tags/tag_div.asp">HTML &lt;/div&gt; Tag</a></h4>
+                <small>by clicking title above, you will be redirected to W3School.com to know more about "div"</small>
+                <br/>
+                <br/>
+
+                <h5>Explaination</h5>
+                <p>
+                    Div tag defines divisions in an HTML file. <small>(e.g. below)</small><br>
+                    <dl>
+                        <li>Attributes</li>
+                        <li>ID CLASS/ work as identifier usinng in css file</li>
+                        <li>lang/ language information</li>
+                        <li>title/ element title</li>
+                        <li>align/ alignment</li>
+                    </dl>
+                <img src="static/pics/html_div.png" width="850px">
+                </p>
+                <br/>
+                <br/>
+                <h5>Result Display</h5>
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100 " src="static/pics/nycred1.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="static/pics/nycreda1.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="static/pics/park-bridge1.jpg" alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+
+                </div>
+                <br/>
+                <!--Table-->
+                <h4><a href="https://www.w3schools.com/html/html_tables.asp">HTML &lt;/th&gt; & &lt;/td&gt; &lt;/cospan&gt; &lt;/rowspan&gt;</a></h4>
+                <small>by clicking title above, you will be redirected to W3School.com to know more about "tr, td, cospan"</small>
+                <br/>
+                <br/>
+
+                <h5>Explaination</h5>
+                <dl>
+                    <li>&lt;/th&gt; defines the header of an HTML table </li>
+                    <li>&lt;/td&gt; defines a specific cell in a table/ </li>
+                    <li>&lt;/cospan&gt; means the number of columns a cell should span</li>
+                    <li>&lt;/rowspan &gt; means the number of rows a cell should span/ </li>
+
+                </dl>
+                <img src="static/pics/html_table.png" width="850px">
+                <br/>
+                <br/>
+                <br/>
+                <h5>Result Display</h5>
+                <table class="table table-striped">
+                    <!--Table head-->
+                    <thead>
+                    <tr>
+                        <th>Table</th>
+                        <th colspan="2">Product</th>
+                        <th>item</th>
+                        <th>Price</th>
+                        <th colspan="2">location</th>
+                    </tr>
+                    </thead>
+                    <!--Table head-->
+
+                    <!--Table body-->
+                    <tbody>
+                    <tr class="table-warning">
+                        <th scope="row">1</th>
+                        <td colspan="2">Aquina Gold</td>
+                        <td>30</td>
+                        <td>$369.00</td>
+                        <td colspan="2">New York City, US</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td colspan="2">Aquina Gold</td>
+                        <td>30</td>
+                        <td>$369.00</td>
+                        <td colspan="2">New York City, US</td>
+                    </tr>
+                    <tr class="table-info">
+                        <th scope="row">3</th>
+                        <td colspan="2">Aquina Gold</td>
+                        <td>30</td>
+                        <td>$369.00</td>
+                        <td colspan="2">New York City, US</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td colspan="2">Aquina Gold</td>
+                        <td>30</td>
+                        <td>$369.00</td>
+                        <td colspan="2">New York City, US</td>
+                    </tr>
+                    <tr class="table-danger">
+                        <th scope="row">5</th>
+                        <td colspan="2">Aquina Gold</td>
+                        <td>30</td>
+                        <td>$369.00</td>
+                        <td colspan="2">New York City, US</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td colspan="2">Aquina Gold</td>
+                        <td>30</td>
+                        <td>$369.00</td>
+                        <td colspan="2">New York City, US</td>
+                    </tr>
+                    <tr class="table-dark">
+                        <th scope="row">7</th>
+                        <td colspan="2">Aquina Gold</td>
+                        <td>30</td>
+                        <td>$369.00</td>
+                        <td colspan="2">New York City, US</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td colspan="2">Aquina Gold</td>
+                        <td>30</td>
+                        <td>$369.00</td>
+                        <td colspan="2">New York City, US</td>
+                    </tr>
+                    <tr class="table-success">
+                        <th scope="row">9</th>
+                        <td colspan="2">Aquina Gold</td>
+                        <td>30</td>
+                        <td>$369.00</td>
+                        <td colspan="2">New York City, US</td>
+                    </tr>
+                    </tbody>
+                    <!--Table body-->
+
+
+                </table>
+                <!--Table-->
+
+
+            </div>
+            <div class="tab-pane fade" id="profile-ex" role="tabpanel" aria-labelledby="profile-tab-ex">
+                <h4><a href="https://www.w3schools.com/css/css_website_layout.asp">CSS Layout</a></h4>
+                <small>by clicking title above, you will be redirected to W3School.com to know more about "layout"</small>
+                <br/>
+                <br/>
+
+                <h5>Explanations</h5>
+                <p>
+                    A website is often broke down into headers, menus, content and a footer:<small> (e.g. below) </small><br>
+
+                 <br/>
+                 <br/>
+                <img src="static/pics/css_layout_code.png" width="850px">
+                </p>
+                <br/>
+                <br/>
+                <h5>Result Display</h5>
+                <img src="static/pics/css_layout.png" width="850px">
+                <br/>
+                <br/>
+                <h4><a href="https://www.w3schools.com/cssref/pr_dim_width.asp">CSS Width</a></h4>
+                <small>by clicking title above, you will be redirected to W3School.com to know more about "width"</small>
+                <br/>
+                <br/>
+
+                <h5>Explanations</h5>
+                <p>
+                    The width property sets the width of an element. The width of an element does not include padding, borders, or margins!
+                    <small> (e.g. below) </small><br>
+
+                 <br/>
+                 <br/>
+                <p> code demo   &lt;/img&gt src="static/pics/css_layout.png" width="550px" </p>
+
+                </p>
+                <br/>
+                <br/>
+                <h5>Result Display</h5>
+                <img src="static/pics/css_layout.png" width="550px">
+                <br/>
+                <br/>
+                <h4><a href="https://www.w3schools.com/css/css_font.asp">CSS Fonts</a></h4>
+                <small>by clicking title above, you will be redirected to W3School.com to know more about "fonts"></small>
+                <br/>
+                <br/>
+
+                <h5>Explanations</h5>
+                <p>
+                    The CSS font properties define the font family, boldness, size, and the style of a text.
+                    <small> (e.g. below) </small><br>
+
+                 <br/>
+                 <br/>
+                <p> code demo<dr/>
+                        &lt;/div&gt; class ="header">Paw : WebTitle<br/>
+                        &lt;/img&gt; src = "images/puppy_cartoon.png"><br/>
+                        &lt;/img&gt; src = "images/foot_print.jpg"><br/>
+                        &lt;/div&gt;<br/>
+                        CSS code<dr/>
+                        .header{<br/>
+                            background-color: #f1f1f1;<br/>
+                            padding: 20px;<br/>
+                            text-align: center;<br/>
+                            font-size: xx-large; <br/>
+                }
+            </p>
+
+                </p>
+                <br/>
+                <br/>
+                <h5>Result Display</h5>
+                <img src="static/pics/css_font.png" width="850px">
+            </div>
+            <div class="tab-pane fade" id="contact-ex" role="tabpanel" aria-labelledby="contact-tab-ex">
+                <h4><a href="https://data-flair.training/blogs/python-best-practices/">Python Best Practice - Comments</a></h4>
+                <small>by clicking title above, you will be redirected to Data Flair to know more about "python good practices"></small>
+                <br/>
+                <br/>
+
+                <h5>Conclusion</h5>
+                <p>
+                    Comments are critical in terms of readability. considered a good practice, programmers should write down their logic
+                    and necessary keyword in plain English by typing #blablabla. Comments are not only for you, but also for your colleagues
+                    and teammates to understand what things you intend to solve. Therefore, adding comments to explain your ideas are as valuable
+                    as writing perfect code. Also, using whitespace around operators is considered as a practice. Be consistent.
+                    <br/>
+                 <br/>
+                 <br/>
+                <p> code demo<dr/>
+                <img src="static/pics/python-comments.png" width="850px">
+                </p>
+
+                </p>
+                <br/>
+                <br/>
+                <h4><a href="https://getbootstrap.com/docs/4.0/components/carousel/">Boostrap Carousel</a></h4>
+                <small>by clicking title above, you will be redirected to Boostrap to know more about "Carousel"</small>
+                <br/>
+                <br/>
+
+                <h5>Explanations</h5>
+                <p>
+                    The carousel is a slideshow component for cycling through a series of content, such as images, text
+                    or custom markup. Also, it has previous and next control panes and indicators to slide throw contents
+                    <br/>
+
+                    Carousel displays the slideshow in Boostrap, giving users more choices and interactive experiences.
+                    It mainly has three different components: carousel indicators, the wrapper of slides, and left,
+                    right control. By clicking the left or right control button or the navigation dot, clients can view
+                    different slides display using a bootstrap carousel.
+                    <small> (e.g. below) </small><br>
+
+                 <br/>
+                 <br/>
+                <p> code demo
+                <img src="static/pics/html_div.png" width="850px"></p>
+
+                </p>
+                <h5>Result Display</h5>
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100 " src="static/pics/nycred1.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="static/pics/nycreda1.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="static/pics/park-bridge1.jpg" alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+
+                </div>
+                <br/>
+                <br/>
+                <h4><a href="#">Homework5 & 6 Linear Regression </a></h4>
+                <small>by clicking title above, you will be redirected to an file upload page></small>
+                <br/>
+                <br/>
+
+                <h5>Conclusion</h5>
+                <p>
+                    I create a linear regression model given by a list of x values and y values. Then, user are welcome
+                    to input a series of new x values. This model will return your the corresponding y values are the
+                    predicted result. In order to make this model more user friendly, I will create an LINEAR REGRESSION
+                    HTML user interface later on. In this html, I will try to create a dashboard to enhance user
+                    experiences.
+                    <br/>
+                 <br/>
+                 <br/>
+                <p> code demo<dr/>
+                <img src="static/pics/python-linear-regression.png" width="850px">
+                <br/>
+                <br/>
+                <img src="static/pics/python-linear-regression-model.png" width="850px">
+                </p>
+                <h5>Result Display</h5>
+                <img src="static/pics/python-linear-regression-result.png" width="850px">
+                <br/>
+                <br/>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-2">
+
+    </div>
+
+</div>
+{% endblock content %}

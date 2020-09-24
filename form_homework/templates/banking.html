@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="container">
+    <div class="card">       
+        <div class="card-header border-0 bg-warning text-white">
+            <div class="d-flex justify-content-between">
+                <h3 class="card-title" style="font-size:12pt;">Data Table Preview</h3>
+            </div>
+        </div>
+        <div class="card-body">
+            
+             <table id="mytable2" class="table table-hover " style="font-size:10pt;text-align: center;">
+                    <thead>
+                        <tr>
+                            
+                            <th>Customer_Id</th>
+                            <th>Credit_Score</th>
+                            <th>Geography</th>
+                            <th>Gender</th>
+                            <th>Age</th>
+                            <th>Tenure</th>
+                            <th>Balance</th>
+                            <th>Estimated_Salary</th>
+                            <th>Exited</th>
+                            
+                        </tr>
+                    <thead>
+
+                    <tbody>
+                    </tbody>
+
+                    <thead>
+                        <tr> 
+                            <th>Customer_Id</th>
+                            <th>Credit_Score</th>
+                            <th>Geography</th>
+                            <th>Gender</th>
+                            <th>Age</th>
+                            <th>Tenure</th>
+                            <th>Balance</th>
+                            <th>Estimated_Salary</th>
+                            <th>Exited</th>
+                        </tr>
+                    <thead>
+                </table>
+
+
+        </div>
+    </div>    
+</div>
+{% endblock content %}
+
+{% block scripts %}    
+<script>
+    $(document).ready(function() {
+        $('#mytable').DataTable();
+        } );
+
+        $('#mytable2').DataTable( {
+            "processing": true,      
+            stateSave: true,
+            "ajax": "http://127.0.0.1:5000/banking.json",
+            // add column definitions to map your json to the table                                           
+            "columns": [
+                {data: "Customer_Id"},
+                {data: "Credit_Score"} ,
+                {data: "Geography"} ,
+                {data: "Gender"},
+                {data: "Age"} ,
+                {data: "Tenure"},
+                {data: "Balance"} ,
+                {data: "Estimated_Salary"},
+                {data: "Exited"}
+            ] 
+        
+    } );
+</script>        
+{% endblock scripts %}

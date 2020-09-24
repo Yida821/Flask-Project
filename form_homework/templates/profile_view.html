@@ -1,0 +1,186 @@
+{% extends "layout.html" %} {% block content %}
+
+<div class="container">
+  <div class="card">
+    <div class="card-header border-0 bg-warning">
+      <div class="d-flex justify-content-between">
+        <h3 class="card-title">Profile Form</h3>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-sm-12">
+          <table class="col-sm-12">
+            <tr>
+              <th><label>First Name</label></th>
+              <td>{{ data.first_name }}</td>
+
+              <th><label>Last Name</label></th>
+              <td>{{ data.last_name }}</td>
+            </tr>
+
+            <tr>
+              <th><label>Email</label></th>
+              <td>{{ data.email}}</td>
+
+              <th><label>Password</label></th>
+              <td>{{ data.password }}</td>
+            </tr>
+
+            <tr>
+              <th><label>Check Box</label></th>
+              <td>{{ data.check_box }}</td>
+
+              <th><label>Radio Check</label></th>
+              <td>{{ data.radio }}</td>
+            </tr>
+            <tr></tr>
+
+            <tr>
+              <th><label>Address</label></th>
+              <td>{{ data.address }}</td>
+              <th><label>City</label></th>
+              <td>{{ data.city }}</td>
+            </tr>
+
+            <tr>
+              <th><label>State</label></th>
+              <td>{{ data.state }}</td>
+              <th><label>Zipcode</label></th>
+              <td>{{ data.zipcode }}</td>
+            </tr>
+
+            <tr>
+              <th><label>Join Date</label></th>
+              <td>{{ data.date }}</td>
+
+              <th><label>Date Range</label></th>
+              <td>{{ data.date_range }}</td>
+            </tr>
+
+            <tr>
+              <th><label>Time Picker</label></th>
+              <td>{{ data.time }}</td>
+
+              <th><label>Slider Value</label></th>
+              <td>{{ data.slider_value }}</td>
+            </tr>
+
+            <tr>
+              <th><label>Multi Select</label></th>
+              <td>{{ data.string_to_list(data.multiselect) }}</td>
+
+              <th><label>Like Level</label></th>
+              <td>{{ data.like_level }}</td>
+            </tr>
+
+            <tr>
+              <th><label>Profile Image</label></th>
+              <td>
+                <img
+                  src="{{ url_for('static',filename='/uploads/' + data.file_photo_code ) }}"
+                  style="border-radius: 50%;"
+                  width="200px"
+                  height="200px"
+                />
+              </td>
+              <th><label>Download</label></th>
+              <td>
+                <a
+                  href="{{ url_for('downloadFile' ,filename= data.file_photo_code ) }}"
+                  >{{ data.file_photo_filename }}</a
+                >
+              </td>
+            </tr>
+          </table>
+          <!--
+                    <table class="col-sm-6">
+                        <tr>
+                            <th><label>First Name</label></th>
+                            <td>{{ data.first_name }}</td>
+                        </tr>
+                        <tr>
+                            <th><label>Last Name</label></th>
+                            <td>{{ data.last_name }}</td>
+                        </tr>
+                        <tr>
+                            <th><label>Email</label></th>
+                            <td>{{ data.email}}</td>
+                        </tr>
+                        <tr>
+                            <th><label>Password</label></th>
+                            <td>{{ data.password }}</td>
+                        </tr>
+                        <tr>
+                            <th><label>Check Box</label></th>
+                            <td>{{ data.check_box }}</td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <th><label>Radio Check</label></th>
+                            <td>{{ data.radio }}</td>
+                        </tr>
+                        <tr>
+                            <th><label>Address</label></th>
+                            <td>{{ data.address }}</td>
+                        </tr>
+                        <tr>
+                            <th><label>City</label></th>
+                            <td>{{ data.city }}</td>
+                        </tr>
+                        <tr>
+                            <th><label>State</label></th>
+                            <td>{{ data.state }}</td>
+                        </tr>
+                        <tr>
+                            <th><label>Zipcode</label></th>
+                            <td>{{ data.zipcode }}</td>
+                        </tr>
+                        <tr>
+                            <th><label>Join Date</label></th>
+                            <td>{{ data.date }}</td>
+                        </tr>
+                        <tr>
+                            <th><label>Date Range</label></th>
+                            <td>{{ data.date_range }}</td>
+                        </tr>
+                        <tr>
+                            <th><label>Time Picker</label></th>
+                            <td>{{ data.time }}</td>
+                        </tr>
+                        <tr>
+                            <th><label>Slider Value</label></th>
+                            <td>{{ data.slider_value }}</td>
+                        </tr>
+                        <tr>
+                            <th><label>Multi Select</label></th>
+                            <td>{{ data.string_to_list(data.multiselect) }}</td>
+                        </tr>
+                        <tr>
+                            <th><label>Like Level</label></th>
+                            <td>{{ data.like_level }}</td>
+                        </tr>
+                        <tr>
+                            <th><label>Profile Image</label></th>
+                            <td>                              
+                                <img src="{{ url_for('static',filename='/uploads/' + data.file_photo_code ) }}"  width="200px" height="200px">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th><label>Download</label></th>
+                            <td>
+                                <a href="{{ url_for('downloadFile' ,filename= data.file_photo_code ) }}">{{ data.file_photo_filename }}</a>
+                            </td>
+                        </tr>
+                    </table> 
+                    -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br />
+<br />
+{% endblock content %}

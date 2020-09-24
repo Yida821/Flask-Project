@@ -1,0 +1,48 @@
+{% extends "layout.html" %} {% block content %}
+
+<div class="container">
+  <h2>HTML Calculator</h2>
+  <div id="calc-parent">
+    <div class="row1">
+      <div class="column1" id="calc-display-val">0</div>
+    </div>
+    <div class="row1">
+      <div class="calc-btn column1" id="calc-clear">AC</div>
+      <div class="calc-btn column1" id="calc-backspace">&#8676;</div>
+      <div class="calc-btn calc-btn-operator column1" id="calc-divide">
+        &#247;
+      </div>
+    </div>
+    <div class="row1">
+      <div class="calc-btn calc-btn-num column1" id="calc-seven">7</div>
+      <div class="calc-btn calc-btn-num column1" id="calc-eight">8</div>
+      <div class="calc-btn calc-btn-num column1" id="calc-nine">9</div>
+      <div class="calc-btn calc-btn-operator column1" id="calc-multiply">x</div>
+    </div>
+    <div class="row1">
+      <div class="calc-btn calc-btn-num column1" id="calc-four">4</div>
+      <div class="calc-btn calc-btn-num column1" id="calc-five">5</div>
+      <div class="calc-btn calc-btn-num column1" id="calc-six">6</div>
+      <div class="calc-btn calc-btn-operator column1" id="calc-minus">-</div>
+    </div>
+    <div class="row1">
+      <div class="calc-btn calc-btn-num column1" id="calc-one">1</div>
+      <div class="calc-btn calc-btn-num column1" id="calc-two">2</div>
+      <div class="calc-btn calc-btn-num column1" id="calc-three">3</div>
+      <div class="calc-btn calc-btn-operator column1" id="calc-plus">+</div>
+    </div>
+    <div class="row1">
+      <div class="calc-btn calc-btn-num column1" id="calc-zero">0</div>
+      <div class="calc-btn column1" id="calc-decimal">.</div>
+      <div class="calc-btn calc-btn-operator column1" id="calc-equals">=</div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
+
+<!--Block content-->
+{% block scripts %}
+<script src="../static/js/iphone_calculator.js"></script>
+{% endblock scripts %}
+<!--Block content-->

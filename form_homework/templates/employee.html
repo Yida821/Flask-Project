@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="container">
+    <div class="card">       
+        <div class="card-header border-0 bg-warning">
+            <div class="d-flex justify-content-between">
+                <h3 class="card-title">Load CSV File</h3>
+            </div>
+        </div>
+        <div class="card-body">
+            <form method="post" enctype='multipart/form-data'>
+                {{ my_form.hidden_tag() }} 
+                <!-- profile image -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="exampleInputFile">CSV File</label>
+                            <div class="input-group">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" name="file_csv"  wtx-context="A8F69635-7B4C-4206-9EF2-B47AC8BE1122">
+                                    <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Submit Button -->
+                <div class="card-footer">
+                        <button type="submit" name="btnSubmit" value="submit" class="btn btn-primary">Submit</button>                       
+                </div>
+                <!-- Submit Button -->
+            </form>
+        </div>
+    </div>    
+</div>
+
+{% endblock content %}
